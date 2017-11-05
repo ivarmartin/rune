@@ -6,11 +6,29 @@
 <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
 </head>
 <body>
-<a-scene fog="type: exponential; color: #333; density: 0.1" light="defaultLightsEnabled: false">
-<a-entity gltf-model="models/hanstastenen/hanstastenen.gltf" position="0.689 0 -6.494" rotation="0 180 0" scale="0.3 0.3 0.3"></a-entity>
+<a-scene fog="type: exponential; color: #333; density: 0.2" light="defaultLightsEnabled: false">
 
-<a-entity light="intensity:1.5800000000000005;decay:1.59;penumbra:1;distance:8.2;type:point;color:#fff4e3" data-aframe-default-light="" aframe-injected="" position="1.445 1.632 -5.374" rotation="0 -40.565 0"></a-entity>
+<a-entity gltf-model="models/hanstastenen/hanstastenen.gltf" position="0.689 0 -2.012" rotation="0 180 0" scale="0.3 0.3 0.3"></a-entity>
+
+
+
+
+<a-entity position="0.5 0 -2.5"> 
+<a-animation attribute="rotation"
+               dur="7000"
+               to="0 360 0"
+			   easing="linear"
+               repeat="indefinite"
+			   loop="true" 
+			   ></a-animation>
+			   <a-entity geometry="primitive: sphere; radius: 0.1"
+                 material="color: #FFF; shader: flat" light="intensity:1.5800000000000005;decay:1.59;penumbra:1;distance:8.2;type:point;color:#fff4e3" data-aframe-default-light="" aframe-injected="" position="1 1 1">
+</a-entity>
+</a-entity>
+
+
 <a-sky color=#000>
 </a-scene>
 </body>
 </html>
+
